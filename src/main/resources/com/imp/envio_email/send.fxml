@@ -24,9 +24,7 @@
     <TextField fx:id="correo" layoutX="140.0" layoutY="162.0" prefHeight="38.0" prefWidth="250.0" promptText="Correo Destinatario" />
     <TextField fx:id="asunto" layoutX="141.0" layoutY="225.0" prefHeight="38.0" prefWidth="250.0" promptText="Asunto (Titulo (Opcional))" />
     <TextArea fx:id="contenido" layoutX="78.0" layoutY="285.0" prefHeight="355.0" prefWidth="375.0" promptText="Contenido" />
-   <Button layoutX="390.0" layoutY="684.0" mnemonicParsing="false"
-           prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #58bf77;"
-           text="Enviar" onAction="#enviarCorreo">
+   <Button layoutX="390.0" layoutY="684.0" mnemonicParsing="false" onAction="#enviarCorreo" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #58bf77;" text="Enviar">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
@@ -42,6 +40,14 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Label fx:id="errorMail" layoutX="63.0" layoutY="106.0" prefHeight="17.0"
-          prefWidth="406.0" />
+   <Label fx:id="errorMail" layoutX="63.0" layoutY="106.0" prefHeight="17.0" prefWidth="406.0" />
+    <ImageView fx:id="archivos" fitHeight="31.0" fitWidth="28.0" layoutX="420.0"
+               layoutY="612.0" onMouseClicked="#agregarArchivo" onMouseEntered="#titleArchivo"
+               pickOnBounds="true" preserveRatio="true">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <Image url="@assets/images/clip_archivos.png" />
+    </ImageView>
+   <Label fx:id="lblArchivos" layoutX="78.0" layoutY="545.0" prefHeight="95.0" prefWidth="173.0" />
 </AnchorPane>

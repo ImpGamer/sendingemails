@@ -2,6 +2,7 @@ module com.imp.envio_email {
     requires javafx.controls;
     requires javafx.fxml;
     requires mail;
+    requires activation;
 
 
     opens com.imp.envio_email to javafx.fxml;
